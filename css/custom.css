@@ -1,0 +1,5 @@
+@media (max-width: 991px) {
+  .navbar-menu.position-fixed {
+    z-index: 99;
+  }
+}

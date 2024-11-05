@@ -5,12 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
   <link rel="icon" type="image/png" sizes="32x32" href="">
 </head>
 <body>
-  <div class="text-center">
-    <section id="hero" class="position-relative bg-white overflow-hidden">
+    <section id="header" class="position-relative bg-white">
       <div class="position-relative">
         <nav class="navbar navbar-dark navbar-expand-lg py-5">
           <div class="container p-0">
@@ -27,6 +28,28 @@
               <div class="row align-items-center g-6">
                 <div class="col-auto"><a class="fs-11 link-secondary fw-medium" href="#">Log In</a></div>
                 <div class="col-auto"><a class="btn btn-sm btn-success text-success-light shadow" href="#">Sign Up</a></div>
+                <div class="col-auto">
+                  <div class="dropdown">
+                    <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="images/flags/hu.svg" alt="Magyar" width="20" height="20" class="me-1">
+                      HU
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="images/flags/en.svg" alt="English" width="20" height="20" class="me-1">
+                          EN
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <img src="images/flags/de.svg" alt="Deutsch" width="20" height="20" class="me-1">
+                          DE
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="d-lg-none">
@@ -39,7 +62,7 @@
             </div>
           </div>
         </nav>
-        <div class="d-none navbar-menu position-fixed top-0 start-0 bottom-0 w-75 mw-xs">
+        <div class="d-none navbar-menu position-fixed top-0 start-0 bottom-0 w-75 mw-xs z-9">
           <div class="navbar-backdrop position-fixed top-0 start-0 end-0 bottom-0 bg-dark"></div>
           <nav class="position-relative h-100 w-100 d-flex flex-column justify-content-between p-6 bg-white overflow-auto">
             <div class="d-flex align-items-center">
@@ -61,10 +84,35 @@
             <div class="row align-items-center g-6">
               <div class="col-12"><a class="link-secondary fs-11 d-block w-100 text-center fw-medium" href="#">Log In</a></div>
               <div class="col-12"><a class="btn btn-sm btn-success w-100 text-success-light shadow" href="#">Sign Up</a></div>
+              <div class="col-12">
+                <div class="dropdown">
+                  <button class="btn btn-sm btn-light dropdown-toggle w-100" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/flags/hu.svg" alt="Magyar" width="20" height="20" class="me-1">
+                    HU
+                  </button>
+                  <ul class="dropdown-menu w-100" aria-labelledby="languageDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="images/flags/en.svg" alt="English" width="20" height="20" class="me-1">
+                        EN
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="images/flags/de.svg" alt="Deutsch" width="20" height="20" class="me-1">
+                        DE
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </nav>
         </div>
       </div>
+    </section>
+    <section id="hero" class="position-relative bg-white overflow-hidden">
+
       <div class="container">
         <div class="pt-28 pb-28 position-relative">
           <div class="row g-16">
@@ -226,16 +274,61 @@
         </div>
       </div>
     </section>
-    <section id="quote" class="position-relative py-20 bg-white overflow-hidden">      
+    <section id="viewsign" class="position-relative py-20 bg-white overflow-hidden">      
       <div class="position-relative container">
         <div class="text-center">
           <div class="position-relative mb-16 mw-md-5xl mx-auto">
             <img class="mb-6" src="images/2024-10-25-15-08.bmp" alt="">
-            <h3 class="mb-2 fs-8 fw-semibold text-light-dark">Darren Dunlap</h3>
-            <p class="mb-8 fs-10 text-secondary fw-medium">CEO &amp; Founder at Flex.co</p>
-            <h2 class="position-relative mb-0 font-heading fw-semibold">The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.</h2>
+            <h3 class="mb-2 fs-8 fw-semibold text-light-dark">Sagittarius</h3>
+            <p class="mb-8 fs-10 text-secondary fw-medium">2024 october 9.</p>
+            <div class="fs-9"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae rutrum ex. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec sed quam est. Curabitur scelerisque malesuada velit ut blandit. Phasellus dictum tellus et urna condimentum rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer condimentum pharetra nisl, eu consequat dolor volutpat ac. Nam orci nulla, lacinia nec euismod et, aliquet id mauris. Nunc in elit sem. Integer nec tempor tortor..</p></div>
           </div>
           <div class="d-inline-flex"></div>
+        </div>
+      </div>
+      <div class="position-relative container">
+        <div class="mb-16 row align-items-center g-16">
+          <div class="text-center">
+            <div class="">
+              <h3 class=" mb-4 fs-6 color-secondary">Draw a card for your horoscope today</h3>
+              <p class="mb-0 fs-9 fw-medium text-secondary">Highly professional and capable of running your business across all digital channels.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="row justify-content-end g-4">
+              <div class="col-12 col-md-auto"></div>
+              <div class="col-12 col-md-auto">
+                <div class="bg-white rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center row-cols-4 g-4">
+          <div>
+            <div class="card text-center h-100">
+              <i class="bi bi-question-circle"></i>
+              <h5>Question goes here</h5>
+              <a href="#" class="btn btn-success fs-9">Draw a card</a>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <i class="bi bi-question-circle"></i>
+              <h5>Question goes here</h5>
+              <a href="#" class="btn btn-success fs-9">Draw a card</a>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center">
+              <i class="bi bi-question-circle"></i>
+              <h5>Question goes here</h5>
+              <a href="#" class="btn btn-success fs-9">Draw a card</a>
+            </div>
+          </div>
+          <div class="card">
+            <h4>Ask my own question</h4>
+            <textarea class="form-control"></textarea>
+          </div>
         </div>
       </div>
     </section>
@@ -405,7 +498,6 @@
         </p>
       </div>
     </section>
-  </div>
   <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
