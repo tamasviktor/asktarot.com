@@ -1,5 +1,23 @@
+
+.card-wrapper {
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+.card-wrapper:hover,.selected {
+  top: -40px;
+}
+
+.tarot-card {
+  width: 130px; 
+  cursor: pointer; 
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+}
+
 @media (max-width: 991px) {
   .navbar-menu.position-fixed {
     z-index: 99;
   }
 }
+
