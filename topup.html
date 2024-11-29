@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-bootstrap.png">
+</head>
+<body>
+  <section id="header" class="position-relative">
+    <div class="position-relative">
+      <nav class="navbar navbar-dark navbar-expand-lg py-5">
+        <div class="container p-0">
+          <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt="logo"></a>
+          <div class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+              <li class="nav-item p-6"><a class="nav-link link-secondary p-0" href="startreading.html">Start reading</a></li>
+              <li class="nav-item p-6"><a class="nav-link link-secondary p-0" href="topup.html">Topup balance</a></li>
+              <li class="nav-item p-6"><a class="nav-link link-secondary p-0" href="faq.html">FAQ</a></li>
+              <li class="nav-item p-6"><a class="nav-link link-secondary p-0" href="history.html">History</a></li>
+            </ul>
+          </div>
+          <div class="d-none d-lg-block">
+            <div class="row align-items-center g-6">
+              <div class="col-auto"><a class="fs-11 link-primary fw-medium text-dark" href="signin.html"><i class="bi bi-person me-1"></i>Log In</a></div>
+              <div class="col-auto"><a class="btn btn-success text-success-light shadow btn-sm" href="signup.html">Sign Up</a></div>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <button class="btn btn-sm btn-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="images/flags/hu.svg" alt="Magyar" width="20" height="20" class="me-1">
+                    HU
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="images/flags/en.svg" alt="English" width="20" height="20" class="me-1">
+                        EN
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">
+                        <img src="images/flags/de.svg" alt="Deutsch" width="20" height="20" class="me-1">
+                        DE
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-lg-none">
+            <a class="btn navbar-burger p-0" href="#">
+              <svg width="35" height="35" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect class="text-light-light" width="32" height="32" rx="6" fill="currentColor"></rect>
+                <path class="text-secondary" d="M7 12H25C25.2652 12 25.5196 11.8946 25.7071 11.7071C25.8946 11.5196 26 11.2652 26 11C26 10.7348 25.8946 10.4804 25.7071 10.2929C25.5196 10.1054 25.2652 10 25 10H7C6.73478 10 6.48043 10.1054 6.29289 10.2929C6.10536 10.4804 6 10.7348 6 11C6 11.2652 6.10536 11.5196 6.29289 11.7071C6.48043 11.8946 6.73478 12 7 12ZM25 15H7C6.73478 15 6.48043 15.1054 6.29289 15.2929C6.10536 15.4804 6 15.7348 6 16C6 16.2652 6.10536 16.5196 6.29289 16.7071C6.48043 16.8946 6.73478 17 7 17H25C25.2652 17 25.5196 16.8946 25.7071 16.7071C25.8946 16.5196 26 16.2652 26 16C26 15.7348 25.8946 15.4804 25.7071 15.2929C25.5196 15.1054 25.2652 15 25 15ZM25 20H7C6.73478 20 6.48043 20.1054 6.29289 20.2929C6.10536 20.4804 6 20.7348 6 21C6 21.2652 6.10536 21.5196 6.29289 21.7071C6.48043 21.8946 6.73478 22 7 22H25C25.2652 22 25.5196 21.8946 25.7071 21.7071C25.8946 21.5196 26 21.2652 26 21C26 20.7348 25.8946 20.4804 25.7071 20.2929C25.5196 20.1054 25.2652 20 25 20Z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="d-none navbar-menu position-fixed top-0 start-0 bottom-0 w-85 z-9">
+        <div class="navbar-backdrop position-fixed top-0 start-0 end-0 bottom-0 bg-dark"></div>
+        <nav class="position-relative h-100 w-100 d-flex flex-column justify-content-between p-6 bg-white overflow-auto">
+          <div class="d-flex align-items-center">
+            <a class="me-auto h4 mb-0 text-decoration-none" href="#"><img src="images/logo.svg" alt="logo"></a>
+            <a class="navbar-close text-secondary" href="#">
+              <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
+          <div class="py-16">
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item"><a class="nav-link link-secondary-dark bg-light-light" href="#">Product</a></li>
+              <li class="nav-item"><a class="nav-link link-secondary" href="#">Features</a></li>
+              <li class="nav-item"><a class="nav-link link-secondary" href="#">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link link-secondary" href="#">Resources</a></li>
+            </ul>
+          </div>
+          <div class="row align-items-center g-6">
+            <div class="col-12"><a class="link-secondary fs-11 d-block w-100 text-center fw-medium" href="#">Log In</a></div>
+            <div class="col-12"><a class="btn btn-sm btn-success w-100 text-success-light shadow" href="#">Sign Up</a></div>
+            <div class="col-12">
+              <div class="dropdown">
+                <button class="btn btn-sm btn-light dropdown-toggle w-100" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="images/flags/hu.svg" alt="Magyar" width="20" height="20" class="me-1">
+                  HU
+                </button>
+                <ul class="dropdown-menu w-100" aria-labelledby="languageDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/flags/en.svg" alt="English" width="20" height="20" class="me-1">
+                      EN
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="images/flags/de.svg" alt="Deutsch" width="20" height="20" class="me-1">
+                      DE
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+      <section id="pricing" class="position-relative py-20 bg-white overflow-hidden wavebg gradientbg">
+        
+        <div class="position-relative container z-2">
+          <div class="mb-16 text-center">
+            <span class="badge mb-4 bg-success text-white text-uppercase shadow">Pricing</span>
+            <h1 class="font-heading mb-4 fs-5" style="">Flexible pricing plan for your startup</h1>
+            <p class="mb-0 fs-9 fw-medium text-secondary">Pricing that scales with your business immediately.</p>
+          </div>
+          <div class="row g-8">
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="bg-light-light rounded shadow">
+                <div class="border-bottom border-light">
+                  <div class="p-8">
+                    <p class="mb-6 fs-9 fw-medium text-light-dark">Small</p>
+                    <div class="d-flex">
+                      <div class="fs-7 fw-bold mt-1 pe-1">$</div>
+                      <div class="fs-3 fw-semibold">
+                        <span>10</span>
+                        <span class="fs-11 text-secondary">per month</span>
+                      </div>
+                    </div>
+                    <p class="mb-6 fw-medium text-secondary-light">Basic features for up to 10 users.</p>
+                    <div class="row g-4">
+                      <div class="col-12"><a class="btn btn-lg btn-success fs-10 w-100 text-success-light shadow" href="#">Get Started</a></div>
+                      <div class="col-12">
+                        <div class="bg-white rounded"><a class="btn btn-lg btn-outline-light fs-11 py-3 w-100 text-secondary border-0 shadow" href="#">Learn More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-8">
+                  <ul class="mb-0 list-unstyled">
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">Complete documentation</p>
+                    </li>
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">Working materials in Figma</p>
+                    </li>
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">100GB cloud storage</p>
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">500 team members</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="bg-light-light rounded shadow">
+                <div class="border-bottom border-light">
+                  <div class="p-8">
+                    <div class="mb-6 row justify-content-between align-items-center g-4">
+                      <div class="col-auto">
+                        <p class="mb-0 fs-9 fw-medium text-light-dark">Medium</p>
+                      </div>
+                      <div class="col-auto">
+                        <span class="badge bg-warning text-white text-uppercase shadow">Popular</span>
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="fs-7 fw-bold mt-1 pe-1">$</div>
+                      <div class="fs-3 fw-semibold">
+                        <span>99</span>
+                        <span class="fs-11 text-secondary">per month</span>
+                      </div>
+                    </div>
+                    <p class="mb-6 fw-medium text-secondary-light">Basic features for up to 30 users.</p>
+                    <div class="row g-4">
+                      <div class="col-12"><a class="btn btn-lg btn-success fs-10 w-100 text-success-light shadow" href="#">Get Started</a></div>
+                      <div class="col-12">
+                        <div class="bg-white rounded"><a class="btn btn-lg btn-outline-light fs-11 py-3 w-100 text-secondary border-0 shadow" href="#">Learn More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-8">
+                  <ul class="mb-0 list-unstyled">
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">Complete documentation</p>
+                    </li>
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">Working materials in Figma</p>
+                    </li>
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">100GB cloud storage</p>
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">500 team members</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="bg-light-light rounded shadow">
+                <div class="border-bottom border-light">
+                  <div class="p-8">
+                    <p class="mb-6 fs-9 fw-medium text-light-dark">Large</p>
+                    <div class="d-flex">
+                      <div class="fs-7 fw-bold mt-1 pe-1">$</div>
+                      <div class="fs-3 fw-semibold">
+                        <span>799</span>
+                        <span class="fs-11 text-secondary">per month</span>
+                      </div>
+                    </div>
+                    <p class="mb-6 fw-medium text-secondary-light">Basic features for up to 100 users.</p>
+                    <div class="row g-4">
+                      <div class="col-12"><a class="btn btn-lg btn-success fs-10 w-100 text-success-light shadow" href="#">Get Started</a></div>
+                      <div class="col-12">
+                        <div class="bg-white rounded"><a class="btn btn-lg btn-outline-light fs-11 py-3 w-100 text-secondary border-0 shadow" href="#">Learn More</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-8">
+                  <ul class="mb-0 list-unstyled">
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">Complete documentation</p>
+                    </li>
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">Working materials in Figma</p>
+                    </li>
+                    <li class="mb-4 d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">100GB cloud storage</p>
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <i class="bi bi-check-circle me-2 text-success"></i>
+                      <p class="mb-0 fs-11 fw-medium text-secondary">500 team members</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="position-relative py-20 bg-white overflow-hidden" >
+        <div class="position-relative container">
+          <span class="badge mb-4 bg-success text-white text-uppercase shadow">Quotes</span>
+          <h2 class="font-heading fw-medium mb-4 fs-5" style="">Testimonial from Flex app users</h2>
+          <p class="mb-16 fs-9 fw-medium text-secondary">With Flex, you can build websites without writing code.</p>
+          <div class="row g-8">
+            <div class="col-12 col-md-4" data-aos="zoom-in">
+              <div class="d-flex flex-column justify-content-between p-8 bg-light-light h-100 rounded shadow">
+                <h3 class="mb-32 font-heading fs-8 fw-medium text-gray-900">The best solution for anyone who wants to work a flexible schedule but still earn a full-time income.</h3>
+                <div class="d-block">
+                  <h3 class="mb-1 font-heading fs-10 fw-semibold text-light-dark">Macauley Herring</h3>
+                  <h3 class="font-heading fs-10 fw-normal text-secondary-light">CEO &amp; Founder at Flex.co</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="zoom-in">
+              <div class="d-flex flex-column justify-content-between p-8 bg-white h-100 rounded shadow-sm">
+                <h3 class="mb-32 font-heading fs-8 fw-medium text-gray-900">I just can't get enough of Flex. I want to get a T-Shirt with Flex on it so I can show it off to everyone. I will recommend you to my colleagues.</h3>
+                <div class="d-block">
+                  <h3 class="mb-1 font-heading fs-10 fw-semibold text-light-dark">Ivan Mathews</h3>
+                  <h3 class="font-heading fs-10 fw-normal text-secondary-light">CTO at Flex.co</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="zoom-in">
+              <div class="d-flex flex-column justify-content-between p-8 bg-light-light h-100 rounded shadow">
+                <h3 class="mb-32 font-heading fs-8 fw-medium text-gray-900">You won't regret it. We've seen amazing results already. Thanks guys, keep up the good work!</h3>
+                <div class="d-block">
+                  <h3 class="mb-1 font-heading fs-10 fw-semibold text-light-dark">Elen Benitez</h3>
+                  <h3 class="font-heading fs-10 fw-normal text-secondary-light">CPO at Flex.co</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="zoom-in">
+              <div class="d-flex flex-column justify-content-between p-8 bg-light-light h-100 rounded shadow">
+                <h3 class="mb-32 font-heading fs-8 fw-medium text-gray-900">Flex impressed me on multiple levels. I use Flex often. I would be lost without Flex. Flex is the real deal!</h3>
+                <div class="d-block">
+                  <h3 class="mb-1 font-heading fs-10 fw-semibold text-light-dark">Kacy Wade</h3>
+                  <h3 class="font-heading fs-10 fw-normal text-secondary-light">Customer Success at Flex.co</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="zoom-in">
+              <div class="d-flex flex-column justify-content-between p-8 bg-white h-100 rounded shadow-sm">
+                <h3 class="mb-32 font-heading fs-8 fw-medium text-gray-900">Flex was worth a fortune to my company. I couldn't have asked for more than this.</h3>
+                <div class="d-block">
+                  <h3 class="mb-1 font-heading fs-10 fw-semibold text-light-dark">Alya Levine</h3>
+                  <h3 class="font-heading fs-10 fw-normal text-secondary-light">Backend Developer at Flex.co</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4" data-aos="zoom-in">
+              <div class="d-flex flex-column justify-content-between p-8 bg-light-light h-100 rounded shadow">
+                <h3 class="mb-32 font-heading fs-8 fw-medium text-gray-900">Thanks for the great service. Flex did exactly what you said it does. Just what I was looking for.</h3>
+                <div class="d-block">
+                  <h3 class="mb-1 font-heading fs-10 fw-semibold text-light-dark">Rosemary Hernandez</h3>
+                  <h3 class="font-heading fs-10 fw-normal text-secondary-light">Product Designer at Flex.co</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="position-relative py-20 bg-light-light overflow-hidden pb-36">
+        <div class="position-relative container" style="z-index:1;">
+          <div class="row g-16">
+            <div class="col-12 col-md-4">
+              <div class="text-center">
+                <svg class="mb-6 text-success" width="72" height="72" viewbox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="36" cy="36" r="36" fill="currentColor"></circle>
+                  <path d="M46.9467 31.76L38.6667 23.7067C37.9653 23.0398 37.0345 22.6679 36.0667 22.6679C35.0989 22.6679 34.1681 23.0398 33.4667 23.7067L25.1867 31.7067C24.8188 32.0278 24.5229 32.4231 24.3184 32.8665C24.1139 33.31 24.0054 33.7917 24 34.28V45.72C24.0141 46.6902 24.4121 47.6152 25.1068 48.2925C25.8016 48.9697 26.7365 49.344 27.7067 49.3333H44.2933C45.2635 49.344 46.1984 48.9697 46.8932 48.2925C47.5879 47.6152 47.9859 46.6902 48 45.72V34.28C47.999 33.8113 47.9054 33.3474 47.7246 32.915C47.5439 32.4825 47.2795 32.09 46.9467 31.76ZM35.2533 25.6267C35.4573 25.4402 35.7237 25.3368 36 25.3368C36.2763 25.3368 36.5427 25.4402 36.7467 25.6267L44 32.6667L36.7067 39.7067C36.5027 39.8931 36.2363 39.9965 35.96 39.9965C35.6837 39.9965 35.4173 39.8931 35.2133 39.7067L28 32.6667L35.2533 25.6267ZM45.3333 45.72C45.3162 45.9817 45.1982 46.2266 45.0043 46.4031C44.8103 46.5797 44.5555 46.6741 44.2933 46.6667H27.7067C27.4445 46.6741 27.1897 46.5797 26.9957 46.4031C26.8018 46.2266 26.6838 45.9817 26.6667 45.72V35.1333L32.0667 40.3333L29.8533 42.4667C29.605 42.7165 29.4656 43.0544 29.4656 43.4067C29.4656 43.7589 29.605 44.0969 29.8533 44.3467C29.9773 44.4767 30.1262 44.5803 30.2911 44.6513C30.4561 44.7224 30.6337 44.7593 30.8133 44.76C31.1566 44.7586 31.4862 44.6249 31.7333 44.3867L34.0933 42.12C34.6795 42.4782 35.3531 42.6677 36.04 42.6677C36.7269 42.6677 37.4005 42.4782 37.9867 42.12L40.3467 44.3867C40.5938 44.6249 40.9234 44.7586 41.2667 44.76C41.4463 44.7593 41.6239 44.7224 41.7889 44.6513C41.9538 44.5803 42.1027 44.4767 42.2267 44.3467C42.475 44.0969 42.6144 43.7589 42.6144 43.4067C42.6144 43.0544 42.475 42.7165 42.2267 42.4667L40 40.3333L45.3333 35.1333V45.72Z" fill="white"></path>
+                </svg>
+                <h2 class="mb-2 font-heading fs-7">Email</h2>
+                <p class="mb-4 fs-9 text-secondary fw-medium">Lorem ipsum dolor sit amet</p>
+                <p class="mb-0 fs-9 text-success fw-medium">contact@flex.co</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="text-center">
+                <svg class="mb-6 text-success" width="72" height="72" viewbox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="36" cy="36" r="36" fill="currentColor"></circle>
+                  <path d="M45.88 37.3333C45.5867 37.3333 45.28 37.24 44.9867 37.1733C44.3931 37.0406 43.8095 36.8669 43.24 36.6533C42.6215 36.4283 41.9415 36.44 41.3311 36.6861C40.7206 36.9323 40.2228 37.3955 39.9333 37.9867L39.64 38.6C38.3451 37.8656 37.1488 36.9695 36.08 35.9333C35.0438 34.8645 34.1477 33.6682 33.4133 32.3733L34.0267 32.0933C34.6178 31.8039 35.081 31.306 35.3272 30.6956C35.5733 30.0851 35.585 29.4052 35.36 28.7867C35.1483 28.212 34.9745 27.6241 34.84 27.0267C34.7733 26.7333 34.72 26.4267 34.68 26.1333C34.5181 25.1942 34.0262 24.3437 33.2928 23.735C32.5595 23.1263 31.6329 22.7995 30.68 22.8133H26.6667C26.103 22.8126 25.5455 22.931 25.0308 23.1608C24.5161 23.3906 24.0558 23.7265 23.68 24.1467C23.2964 24.5782 23.0108 25.0877 22.8428 25.6401C22.6748 26.1924 22.6283 26.7746 22.7067 27.3467C23.4315 32.8962 25.9669 38.0515 29.92 42.0133C33.8818 45.9664 39.0372 48.5019 44.5867 49.2267C44.7597 49.2399 44.9336 49.2399 45.1067 49.2267C46.0899 49.2281 47.0392 48.8674 47.7733 48.2133C48.1935 47.8376 48.5294 47.3772 48.7592 46.8625C48.989 46.3478 49.1074 45.7903 49.1067 45.2267V41.2267C49.0995 40.3054 48.7745 39.4148 48.1866 38.7055C47.5987 37.9961 46.7839 37.5114 45.88 37.3333ZM46.5333 45.3333C46.5329 45.5194 46.4935 45.7033 46.4177 45.8732C46.342 46.0432 46.2315 46.1953 46.0933 46.32C45.9472 46.4531 45.7733 46.5521 45.5842 46.6098C45.3951 46.6674 45.1956 46.6823 45 46.6533C40.0244 46.0035 35.4003 43.736 31.84 40.2C28.2766 36.6366 25.9894 31.9965 25.3333 27C25.3044 26.8045 25.3192 26.6049 25.3769 26.4158C25.4346 26.2267 25.5335 26.0528 25.6667 25.9067C25.7928 25.7669 25.9472 25.6554 26.1195 25.5795C26.2919 25.5037 26.4784 25.4652 26.6667 25.4667H30.6667C30.9749 25.4591 31.2762 25.5587 31.5193 25.7483C31.7624 25.9379 31.9323 26.2059 32 26.5067C32 26.8667 32.12 27.24 32.2 27.6C32.3541 28.2985 32.5591 28.9848 32.8133 29.6533L30.9467 30.5333C30.6258 30.6806 30.3765 30.9491 30.2533 31.28C30.12 31.6046 30.12 31.9687 30.2533 32.2933C32.1723 36.4037 35.4763 39.7077 39.5867 41.6267C39.9113 41.76 40.2754 41.76 40.6 41.6267C40.9309 41.5035 41.1994 41.2542 41.3467 40.9333L42.1867 39.0667C42.8745 39.3175 43.5783 39.5224 44.2933 39.68C44.64 39.76 45.0133 39.8267 45.3733 39.88C45.6741 39.9477 45.9421 40.1176 46.1317 40.3607C46.3214 40.6038 46.4209 40.9051 46.4133 41.2133L46.5333 45.3333ZM38.6667 22.6667C38.36 22.6667 38.04 22.6667 37.7333 22.6667C37.3797 22.6967 37.0525 22.866 36.8237 23.1373C36.5949 23.4086 36.4833 23.7597 36.5133 24.1133C36.5434 24.467 36.7127 24.7942 36.984 25.023C37.2553 25.2517 37.6064 25.3634 37.96 25.3333H38.6667C40.7884 25.3333 42.8232 26.1762 44.3235 27.6765C45.8238 29.1768 46.6667 31.2116 46.6667 33.3333C46.6667 33.5733 46.6667 33.8 46.6667 34.04C46.6371 34.3918 46.7482 34.7409 46.9757 35.0108C47.2031 35.2807 47.5283 35.4495 47.88 35.48H47.9867C48.3204 35.4814 48.6426 35.3575 48.8895 35.1328C49.1363 34.9082 49.29 34.5991 49.32 34.2667C49.32 33.96 49.32 33.64 49.32 33.3333C49.32 30.5067 48.198 27.7956 46.2005 25.7956C44.203 23.7956 41.4933 22.6702 38.6667 22.6667ZM41.3333 33.3333C41.3333 33.687 41.4738 34.0261 41.7239 34.2761C41.9739 34.5262 42.313 34.6667 42.6667 34.6667C43.0203 34.6667 43.3594 34.5262 43.6095 34.2761C43.8595 34.0261 44 33.687 44 33.3333C44 31.9189 43.4381 30.5623 42.4379 29.5621C41.4377 28.5619 40.0812 28 38.6667 28C38.313 28 37.9739 28.1405 37.7239 28.3905C37.4738 28.6406 37.3333 28.9797 37.3333 29.3333C37.3333 29.687 37.4738 30.0261 37.7239 30.2761C37.9739 30.5262 38.313 30.6667 38.6667 30.6667C39.3739 30.6667 40.0522 30.9476 40.5523 31.4477C41.0524 31.9478 41.3333 32.6261 41.3333 33.3333Z" fill="white"></path>
+                </svg>
+                <h2 class="mb-2 font-heading fs-7">Phone</h2>
+                <p class="mb-4 fs-9 text-secondary fw-medium">Lorem ipsum dolor sit amet</p>
+                <p class="mb-0 fs-9 text-success fw-medium">+7-843-672-431</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="text-center">
+                <svg class="mb-6 text-success" width="72" height="72" viewbox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="36" cy="36" r="36" fill="currentColor"></circle>
+                  <path d="M44 25.9733C41.8783 23.8516 39.0006 22.6596 36 22.6596C32.9994 22.6596 30.1217 23.8516 28 25.9733C25.8783 28.0951 24.6863 30.9727 24.6863 33.9733C24.6863 36.9739 25.8783 39.8516 28 41.9733L35.0267 49.0133C35.1506 49.1383 35.2981 49.2375 35.4606 49.3052C35.623 49.3729 35.7973 49.4077 35.9733 49.4077C36.1493 49.4077 36.3236 49.3729 36.4861 49.3052C36.6486 49.2375 36.796 49.1383 36.92 49.0133L44 41.9067C46.1129 39.7938 47.2998 36.9281 47.2998 33.94C47.2998 30.9519 46.1129 28.0862 44 25.9733ZM42.0933 40L36 46.12L29.9067 40C28.7028 38.7951 27.8833 37.2603 27.5516 35.5897C27.2199 33.9191 27.3909 32.1877 28.0431 30.6142C28.6952 29.0408 29.7992 27.6961 31.2155 26.75C32.6318 25.8039 34.2968 25.2989 36 25.2989C37.7032 25.2989 39.3682 25.8039 40.7845 26.75C42.2008 27.6961 43.3048 29.0408 43.9569 30.6142C44.6091 32.1877 44.7801 33.9191 44.4484 35.5897C44.1167 37.2603 43.2971 38.7951 42.0933 40ZM32 29.88C30.9236 30.9597 30.3192 32.4221 30.3192 33.9467C30.3192 35.4712 30.9236 36.9336 32 38.0133C32.7997 38.8144 33.8181 39.3614 34.9275 39.5859C36.0369 39.8103 37.1879 39.7021 38.2361 39.2749C39.2842 38.8476 40.1829 38.1204 40.8193 37.1843C41.4557 36.2483 41.8015 35.1452 41.8133 34.0133C41.8193 33.2576 41.6737 32.5083 41.3852 31.8098C41.0966 31.1114 40.671 30.4778 40.1333 29.9467C39.6049 29.4061 38.9748 28.9754 38.2792 28.6793C37.5837 28.3832 36.8364 28.2276 36.0805 28.2214C35.3246 28.2152 34.5749 28.3585 33.8746 28.6432C33.1743 28.9278 32.5372 29.3482 32 29.88ZM38.2533 36.12C37.748 36.633 37.0803 36.9545 36.3642 37.0297C35.648 37.1048 34.9281 36.9288 34.3273 36.5319C33.7266 36.135 33.2824 35.5417 33.0707 34.8534C32.8589 34.1652 32.8929 33.4248 33.1666 32.7589C33.4403 32.0929 33.9369 31.5427 34.5714 31.2023C35.2059 30.8619 35.939 30.7525 36.6452 30.8928C37.3515 31.0331 37.9871 31.4143 38.4433 31.9714C38.8996 32.5284 39.1482 33.2266 39.1467 33.9467C39.1273 34.7697 38.782 35.5514 38.1867 36.12H38.2533Z" fill="white"></path>
+                </svg>
+                <h2 class="mb-2 font-heading fs-7">Office</h2>
+                <p class="mb-4 fs-9 text-secondary fw-medium">Lorem ipsum dolor sit amet</p>
+                <p class="mb-0 fs-9 text-success fw-medium">1686, Geraldine Lane</p>
+                <p class="mb-0 fs-9 text-success fw-medium">New York, NY 10013</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer" class="position-relative pt-20 overflow-hidden bg-dark">
+        <div class="position-relative container pb-12 pt-0 pt-md-24">
+          <div class="row g-16 text-white">
+            <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+              <div class="mw-md-xs">
+                <div class="mb-4 m-auto-sm">
+                  <a href="#">
+                    <img src="images/logo-footer.svg" alt="logo">
+                  </a>
+                </div>
+                <p class="fs-10 fw-medium text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor nunc sit amet neque ultricies vulputate. Quisque tempor libero sed sem suscipit venenatis ut quis diam. Nullam egestas mauris ut dui finibus mattis. </p>
+                <div class="fs-8 fw-medium text-secondary">
+                  <a href="#" class="text-white pe-2"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="text-white pe-2"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="text-white pe-2"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="text-white pe-2"><i class="bi bi-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2">
+              <div class="mw-md-xs text-center text-md-start">
+                <h3 class="font-heading mb-5 fs-10 text-white">Product</h3>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Features</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Solutions</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Pricing</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Tutorials</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Updates</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-2 text-center text-md-start">
+              <div class="mw-md-xs">
+                <h3 class="font-heading mb-5 fs-10 text-white">Remaining</h3>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Blog</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Newsletter</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Help Centre</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Careers</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Support</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+              <div class="mw-md-sm">
+                <h3 class="font-heading mb-5 fs-10 text-left  text-white">Newsletter</h3>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Blog</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Newsletter</a></li>
+                  <li class="nav-item mb-4"><a class="nav-link p-0 fs-11 link-primary footer-link" href="#">Help Centre</a></li>
+  
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="position-relative container">
+          <p class="mb-0 pt-10 pb-16 fs-12 fw-medium text-center text-secondary-light">© 2021 AskTarot. All rights reserved.
+          </p>
+        </div>
+      </section>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
