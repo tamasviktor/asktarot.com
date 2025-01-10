@@ -152,22 +152,52 @@
             <div class="col-12 col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="bg-light-light rounded shadow h-100">
                 <div class="border-bottom border-light">
-                  <div class="p-8">
-                    <p class="mb-6 fs-9 fw-medium text-light-dark">Pricing</p>
-                    <div class="d-flex">
-                      <div class="fs-7 fw-bold mt-1 pe-1">$</div>
-                      <div class="fs-3 fw-semibold">
-                        <span>799</span>
-                        <span class="fs-11 text-secondary">per month</span>
+                  <div id="pricingholder">
+                    <div class="p-8">
+                      <p class="mb-6 fs-9 fw-medium text-light-dark">Pricing</p>
+                      <div class="d-flex">
+                        <div class="fs-7 fw-bold mt-1 pe-1">$</div>
+                        <div class="fs-3 fw-semibold">
+                          <span>799</span>
+                          <span class="fs-11 text-secondary">per month</span>
+                        </div>
+                      </div>
+                      <p class="mb-6 fw-medium text-secondary-light">Basic features for up to 100 questions.</p>
+                      <div class="row g-4">
+                        <div class="col-12"><a class="btn btn-lg btn-success fs-10 w-100 text-success-light shadow" onclick="$('#pricingholder').hide();$('#paymentform').show()">Get Started</a></div>
+                        <div class="col-12">
+                          <div class="bg-white rounded"><a class="btn btn-lg btn-outline-light fs-11 py-3 w-100 text-secondary border-0 shadow" href="#">Learn More</a></div>
+                        </div>
                       </div>
                     </div>
-                    <p class="mb-6 fw-medium text-secondary-light">Basic features for up to 100 questions.</p>
-                    <div class="row g-4">
-                      <div class="col-12"><a class="btn btn-lg btn-success fs-10 w-100 text-success-light shadow" href="#">Get Started</a></div>
-                      <div class="col-12">
-                        <div class="bg-white rounded"><a class="btn btn-lg btn-outline-light fs-11 py-3 w-100 text-secondary border-0 shadow" href="#">Learn More</a></div>
-                      </div>
+                  </div>
+                  <div id="paymentform" style="display: none;">
+                    <div class="p-8">
+                      <h4>Topup</h4>
+                      <form>
+                        <div class="mb-4">
+                          <label class="form-label fs-11">Kártyabirtokos neve</label>
+                          <input type="text" class="form-control" placeholder="Név">
+                        </div>
+                        <div class="mb-4">
+                          <label class="form-label fs-11">Kártyaszám</label>
+                          <input type="text" class="form-control" placeholder="1234 5678 9012 3456">
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-6">
+                            <label class="form-label fs-11">Lejárati dátum</label>
+                            <input type="text" class="form-control" placeholder="HH/ÉÉ">
+                          </div>
+                          <div class="col-6">
+                            <label class="form-label fs-11">CVC kód</label>
+                            <input type="text" class="form-control" placeholder="123">
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100 fs-10">Fizetés most</button>
+                      </form>
+                      
                     </div>
+
                   </div>
                 </div>
 
