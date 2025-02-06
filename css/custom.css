@@ -183,6 +183,10 @@ h6 span, .h6 span, h5 span, .h5 span, h4 span, .h4 span, h3 span, .h3 span, h2 s
   color: #6D3B99 !important;
 }
 
+.text-sale{
+  color: #099c3f !important;
+}
+
 .link-primary {
   color: #ff5722 !important;
 }
